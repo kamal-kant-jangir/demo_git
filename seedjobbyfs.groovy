@@ -1,5 +1,5 @@
-freeStyleJob('job-by-seed1'){
+freeStyleJob('seed-job-by-fs2'){
   steps{
-    shell('echo hello one')
+    shell('echo hello fs')
   }
 }
