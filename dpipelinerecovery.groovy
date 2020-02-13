@@ -6,14 +6,6 @@ pipelineJob('DeclarativePipeline_converted') {
 
   keepDependencies(false)
 
-  quietPeriod(0)
-
-  checkoutRetryCount(0)
-
-  disabled(false)
-
-  concurrentBuild(false)
-
   configure { flowdefinition ->
 
     flowdefinition / 'actions' << 'org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction'(plugin:'pipeline-model-definition@1.5.1')
